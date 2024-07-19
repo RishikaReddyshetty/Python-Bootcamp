@@ -1,12 +1,35 @@
-#arr=[1,36,24,9,2,12]
-#count how many number are divisble of 4 & 6
-#pass this arr as function parameter
-def check(arr):
-    count=0
-    for i in arr:
-        if i%4==0 and i%6==0:
-            print(i,end=' ')
-            count+=1
-    return count
-arr=[1,36,9,24,4,2,12]
-print('The count is:',check(arr))
+#arr=[1,2,3,4,5]
+#k=4
+#first=arr[k-1:]
+#second=arr[:k-1]
+#print(first+second)
+
+
+ 
+'''arr=[1,2,3,4,5]
+k=4
+first=arr[k-1:]
+second=arr[:k-1]
+print(second)
+print(first)'''
+
+
+
+#Without using concatenation operator
+'''arr=[1,2,3,4,5]
+k=4
+first=arr[k-1:]
+second=arr[:k-1]
+first.extend(second)
+print(first)'''
+
+
+
+arr=[1,2,3,4,5]
+k=2
+first=arr[k+1:k-2:-1]
+second=arr[:k-1]
+print(first+second)
+#print(first)
+print(second)
+
